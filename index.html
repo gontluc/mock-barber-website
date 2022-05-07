@@ -4,9 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moustaxe Barber Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Barber Shop</title>
 </head>
 <body>
-    
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Barber Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+
+        <section id="home">
+            <p class="upper-text">Hair & Beard</p>
+            <h1>Enhance your profile</h1>
+            <p class="bottom-text">Our team is focused on giving you a premium quality experience. Beacause it's more than just a haircut.</p>
+            <div class="button">MAKE APPOINTMENT</div>
+        </section>
+
+        <section id="about">
+            <div id="first-div-about">
+                <p id="top-about">About us</p>
+                <h1>The Barber Shop</h1>
+                <img src="images/beard.png" alt="beard">
+                <p id="description-about">A barber is a person whose occupation is mainly to cut, dress, groom, style and shave men's and boys' hair or beards. A barber's place of work is known as a "barbershop" or a "barber's".</p>
+            </div>
+            <div id="second-div-about">
+                <img src="images/about.jpg" alt="shop">
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div class="line-services"></div>
+            <div id="services-items">
+                <div class="item">
+                    <img src="images/tool1.png" alt="tool">
+                    <p class="title-item">Haircut Styles</p>
+                    <strong>According to your desired preference</strong>
+                </div>
+                
+                <div class="item">
+                    <img src="images/tool2.png" alt="tool">
+                    <p class="title-item">Beard Trimming</p>
+                    <strong>According to your desired preference</strong>
+                </div>
+
+                <div class="item">
+                    <img src="images/tool3.png" alt="tool">
+                    <p class="title-item">Smooth Shave</p>
+                    <strong>According to your desired preference</strong>
+                </div>
+
+                <div class="item">
+                    <img src="images/tool4.png" alt="tool">
+                    <p class="title-item">Face Masking</p>
+                    <strong>According to your desired preference</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>Our pricing</h2>
+            <div class="line-services"></div>
+            <div id="pricing-items">
+                <div class="column-price">
+                    <h3>Hair Style</h3>
+                    <div class="price-title">
+                        <p>Hair Cutting</p>
+                        <p class="price">$8</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+
+                    <div class="price-title">
+                        <p>Hair Trimming</p>
+                        <p class="price">$9</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+
+                    <div class="price-title">
+                        <p>Hair Styling</p>
+                        <p class="price">$10</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+                    
+                </div>
+
+                <div class="column-price">
+                    <h3>Shaving</h3>
+                    <div class="price-title">
+                        <p>Beard Cutting</p>
+                        <p class="price">$8</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+
+                    <div class="price-title">
+                        <p>Beard Trimming</p>
+                        <p class="price">$9</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+
+                    <div class="price-title">
+                        <p>Beard Styling</p>
+                        <p class="price">$10</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+                </div>
+
+                <div class="column-price">
+                    <h3>Face Masking</h3>
+                    <div class="price-title">
+                        <p>Face Cleaning</p>
+                        <p class="price">$8</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+
+                    <div class="price-title">
+                        <p>Face Hydration</p>
+                        <p class="price">$9</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+
+                    <div class="price-title">
+                        <p>Face Smoothing</p>
+                        <p class="price">$10</p>
+                    </div>
+                    <div class="price-description">
+                        According to your desired preference
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="team">
+            <h1>The Team</h1>
+            <p>Surrounded by experts</p>
+            <div id="four-images">
+                <img src="images/t1.jpg" alt="">
+                <img src="images/t2.jpg" alt="">
+                <img src="images/t3.jpg" alt="">
+                <img src="images/t4.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="inspirational">
+            <h2>"Barbershops are also places of social interaction and public discourse. In some instances, barbershops are also public fora."</h2>    
+        </section>
+
+        <section id="contact">
+            <h1>Make an Appointment Today</h1>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="number" name="number" id="number" placeholder="Phone Number">
+                <input type="date" value="2022-06-01">
+                <select name="barber" id="barber" placeholder="Select Barber">
+                    <option value="Bob">Bob</option>
+                    <option value="Bob">Bob</option>
+                    <option value="Bob">Bob</option>
+                    <option value="Bob">Bob</option>
+                </select>
+                <select name="service" id="service">
+                    <option value="service">Hair Cutting</option>
+                    <option value="service">Hair Trimming</option>
+                    <option value="service">Hair Styling</option>
+                    <option value="service">Beard Cutting</option>
+                    <option value="service">Beard Trimming</option>
+                    <option value="service">Beard Styling</option>
+                    <option value="service">Face Cleaning</option>
+                    <option value="service">Face Hydration</option>
+                    <option value="service">Face Smoothing</option>
+                </select>
+            </form>
+            <div class="button">MAKE APPOINTMENT</div>
+        </section>
+
+        <section id="footer">
+            <h1>Footer</h1>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+        </section>
+    </div>
 </body>
 </html>
