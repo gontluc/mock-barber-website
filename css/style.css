@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,10 @@ body {
 
 img {
     image-rendering: high-quality;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -170,6 +175,8 @@ section#services {
 
 #services-items{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #services-items .item {
@@ -250,6 +257,10 @@ section#team {
     color: #fff;
 }
 
+#four-images {
+    display: flex;
+}
+
 #four-images img {
     width: 220px;
     height: 320px;
@@ -258,8 +269,24 @@ section#team {
     box-shadow: 0 5px 10px rgb(82, 27, 27);
 }
 
+#four-images p{
+    display: none;
+    padding: 10px;
+    background-color: rgb(82, 27, 27);
+    margin-top: 140px;
+    position: absolute;
+}
+
+#t1, #t2, #t3, #t4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 section#inspirational {
     background: url('/images/8.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
 }
 
 #inspirational h2 {
@@ -276,15 +303,432 @@ section#contact {
 
 #contact form {
     display: flex;
-    flex-direction: column;
     align-items: start;
     justify-content: center;
-    padding: 20px 40px;
+    padding: 20px;
     background-color: #333;
+    width: 60%;
+    margin-top: 20px;
+    border: #ccc 2px solid;
+    border-radius: 10px;
 }
 
 #contact input[type="text"] {
     margin: 10px;
     padding: 5px 10px;
     width: 300px;
+    background-color: #333;
+    border: #ccc 2px solid;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#contact input[type="text"]::placeholder {
+    color: #ccc;
+    font-family: sans-serif;
+}
+
+#contact input[type="text"]:focus {
+    outline: none;
+}
+
+#contact input[type="email"] {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: #333;
+    border: #ccc 2px solid;
+    font-size: 1.2em;
+    color: #fff
+}
+
+#contact input[type="email"]::placeholder {
+    color: #ccc;
+    font-family: sans-serif;
+}
+
+#contact input[type="email"]:focus {
+    outline: none;
+}
+
+#contact input[type="number"] {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: #333;
+    border: #ccc 2px solid;
+    font-size: 1.2em;
+    color: #fff
+}
+
+#contact input[type="number"]::placeholder {
+    color: #ccc;
+    font-family: sans-serif;
+}
+
+#contact input[type="number"]:focus {
+    outline: none;
+}
+
+/* Remove arrows type number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#contact input[type="date"] {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: #333;
+    border: #ccc 2px solid;
+    font-size: 1.3em;
+    color: #fff;
+    max-height: 38px;
+}
+
+#contact input[type="date"]:focus {
+    outline: none;
+}
+
+#contact input[type="date"]:hover {
+    cursor: pointer;
+}
+
+#contact select {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: #333;
+    border: #ccc 2px solid;
+    font-size: 1.2em;
+    color: #fff;
+    max-height: 36px;
+}
+
+#contact select:hover {
+    cursor: pointer;
+}
+
+#contact option {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: #333;
+    border: #ccc 2px solid;
+    color: #fff
+}
+
+#contact select:focus {
+    outline: none;
+}
+
+/* Calendar icon */
+::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+section#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+#upper-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+#upper-footer img {
+    width: 100px;
+    color: #333;
+    margin: 10px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info h1 {
+    font-size: 1.5em;
+}
+
+#info #socials {
+    display: flex;
+}
+
+#socials i {
+    margin: 10px;
+    font-size: large;
+}
+
+#socials i:hover {
+    cursor: pointer;
+}
+
+#socials #facebook:hover{
+    color: rgb(0, 89, 255);
+}
+
+#socials #instagram:hover{
+    color: rgb(255, 0, 149);
+}
+
+#socials #twitter:hover{
+    color: rgb(0, 132, 255);
+}
+
+#socials #google:hover{
+    color: orangered;
+}
+
+#upper-footer h2 {
+    font-size: 1.3em;
+}
+
+#upper-footer p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+#phone p {
+    text-align: start;
+    line-height: 1.8em;
+}
+
+#bottom-footer {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#bottom-footer .line-footer{
+    width: 100%;
+    background-color: #ccc;
+    padding: 1px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+section#footer #bottom-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+#legal {
+    display: flex;
+}
+
+#legal p {
+    margin: 0 20px;
+}
+
+#legal p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 2px;
+}
+
+#hidden-menu {
+    display: none;
+}
+
+#side-menu{
+    right: 0;
+    top: 0;
+    width: 40%;
+    min-height: 400px;
+    position: absolute;
+    background-color: rgba(36, 36, 36, 0.897);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    border-bottom-left-radius: 25px;
+    /*display:flex*/
+}
+
+#side-menu a{
+    color: #fff;
+}
+
+#side-menu a:visited{
+    color: #fff;
+}
+
+#arrow-div {
+    width: 151px;
+}
+
+#arrow-back {
+  color: white;
+  display: flex;
+  justify-content: end;
+  font-size: xx-large;
+  margin-top: 20px;
+}
+
+#arrow-back:hover {
+    cursor: pointer;
+    color: rgb(199, 199, 153);
+}
+
+#side-menu li {
+    color: #fff;
+    margin: 15px;
+    font-size: large;
+}
+
+#side-menu li:hover {
+    cursor: pointer;
+    color: rgb(199, 199, 153);
+}
+
+#side-menu a:hover {
+    cursor: pointer;
+    color: rgb(199, 199, 153);
+}
+
+.navbar .ul-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width: 1200px) {
+    #second-div-about {
+        display: none;
+    }
+
+    #description-about {
+        width: 80%;
+    }
+
+    #first-div-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #first-div-about h1 {
+        font-size: 3em;
+    }
+
+    #services-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: .7em;
+    }
+
+    #services-items img {
+        width: 40px;
+    }
+
+    .line-services {
+        width: 70%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 900px) {
+    #main-ul li {
+        display: none;
+    }
+
+    .navbar #logo {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .navbar #hidden-menu {
+        display: block;
+        font-size: 1.4em;
+    }
+
+    .navbar #main-ul {
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 850px) {
+    #home h1 {
+        margin: 10px 40px;
+        font-size: 3em;
+    }
+
+    #home .bottom-text {
+        margin: 0 40px;
+        color: #fff;
+        font-family: sans-serif;
+        width: 80%;
+        text-align: start;
+        font-size: 1.1em;
+    }
+
+    #home a {
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+    #home .upper-text {
+        margin: 0 auto;
+        font-size: 0.9em;
+    }
+}
+
+@media(max-width: 650px) {
+    #side-menu li {
+        font-size: small;
+        margin: 10px;
+    }
+
+    #side-menu {
+        width: 50%;
+        min-height: 400px;
+    }
+
+    #arrow-div {
+        width: 100px;
+    }
+}
+
+@media(max-width: 560px) {
+    #services-items .item {
+        width: 30%;
+        flex-basis: 1;
+    }
+
+    #services h2 {
+        font-size: 2.5em;
+    }
+
+    #services .title-item {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 490px) {
+    #first-div-about img {
+        max-width: 128px;
+    }
+
+    #first-div-about h1 {
+        font-size: 2em;
+    }
 }

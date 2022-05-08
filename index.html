@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/3281d95753.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Barber Shop</title>
 </head>
 <body>
     <div class="container">
         <nav class="navbar">
-            <ul>
-                <li><a href="#home">Barber Shop</a></li>
+            <ul id="main-ul">
+                <li id="logo"><a href="#home">Barber Shop</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#prices">Prices</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li id="hidden-menu"><i class="fa-solid fa-bars"></i></li>
               </ul>
+
+              <div id="side-menu">
+                <div id="arrow-div">
+                    <i id="arrow-back" class="fa-solid fa-arrow-left"></i>
+                </div>
+                <ul class="ul-menu">
+                    <li class="hiden-menu-li"><a href="#home">Home</a></li>
+                    <li class="hiden-menu-li"><a href="#about">About</a></li>
+                    <li class="hiden-menu-li"><a href="#services">Services</a></li>
+                    <li class="hiden-menu-li"><a href="#prices">Prices</a></li>
+                    <li class="hiden-menu-li"><a href="#team">Team</a></li>
+                    <li class="hiden-menu-li"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
             </nav>
 
         <section id="home">
             <p class="upper-text">Hair & Beard</p>
             <h1>Enhance your profile</h1>
             <p class="bottom-text">Our team is focused on giving you a premium quality experience. Beacause it's more than just a haircut.</p>
-            <div class="button">MAKE APPOINTMENT</div>
+            <a href="#contact"><div class="button">MAKE APPOINTMENT</div></a>
         </section>
 
         <section id="about">
@@ -162,10 +180,26 @@
             <h1>The Team</h1>
             <p>Surrounded by experts</p>
             <div id="four-images">
-                <img src="images/t1.jpg" alt="">
-                <img src="images/t2.jpg" alt="">
-                <img src="images/t3.jpg" alt="">
-                <img src="images/t4.jpg" alt="">
+                <div id="t1">
+                    <img src="images/t1.jpg" alt="">
+                    <p id="team-name-t1">David H. Bergstrom</p>
+                </div>
+
+                <div id="t2">
+                    <img src="images/t2.jpg" alt="">
+                    <p id="team-name-t2">William M. Becker</p>
+                </div>
+
+                <div id="t3">
+                    <img src="images/t3.jpg" alt="">
+                    <p id="team-name-t3">Kimberly H. Morgan</p>
+                </div>
+
+                <div id="t4">
+                    <img src="images/t4.jpg" alt="">
+                    <p id="team-name-t4">Kerry J. Turner</p>
+                </div>
+                
             </div>
         </section>
 
@@ -176,35 +210,86 @@
         <section id="contact">
             <h1>Make an Appointment Today</h1>
             <form>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="number" name="number" id="number" placeholder="Phone Number">
-                <input type="date" value="2022-06-01">
-                <select name="barber" id="barber" placeholder="Select Barber">
-                    <option value="Bob">Bob</option>
-                    <option value="Bob">Bob</option>
-                    <option value="Bob">Bob</option>
-                    <option value="Bob">Bob</option>
-                </select>
-                <select name="service" id="service">
-                    <option value="service">Hair Cutting</option>
-                    <option value="service">Hair Trimming</option>
-                    <option value="service">Hair Styling</option>
-                    <option value="service">Beard Cutting</option>
-                    <option value="service">Beard Trimming</option>
-                    <option value="service">Beard Styling</option>
-                    <option value="service">Face Cleaning</option>
-                    <option value="service">Face Hydration</option>
-                    <option value="service">Face Smoothing</option>
-                </select>
+                <div class="container-flex">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="number" name="number" id="number" placeholder="Phone Number">
+                </div>
+                <div class="container-flex">
+                    <input type="date" value="2022-06-01">
+                    <select name="barber" id="barber" placeholder="Select Barber">
+                        <option id="choose" value="choose">Choose Barber</option>
+                        <option value="Bob">David H. Bergstrom</option>
+                        <option value="Bob">William M. Becker</option>
+                        <option value="Bob">Kimberly H. Morgan</option>
+                        <option value="Bob">Kerry J. Turner</option>
+                    </select>
+                    <select name="service" id="service">
+                        <option id="choose" value="choose">Select Service</option>
+                        <option value="service">Hair Cutting</option>
+                        <option value="service">Hair Trimming</option>
+                        <option value="service">Hair Styling</option>
+                        <option value="service">Beard Cutting</option>
+                        <option value="service">Beard Trimming</option>
+                        <option value="service">Beard Styling</option>
+                        <option value="service">Face Cleaning</option>
+                        <option value="service">Face Hydration</option>
+                        <option value="service">Face Smoothing</option>
+                    </select>
+                </div>
             </form>
             <div class="button">MAKE APPOINTMENT</div>
         </section>
 
         <section id="footer">
-            <h1>Footer</h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+
+            <div id="upper-footer">
+                <div id="info">
+                    <h1>The Barber Shop</h1>
+                    <img src="images/beard2.png" alt="beard">
+                    <div id="socials">
+                        <i id="facebook" class="fa-brands fa-facebook"></i>
+                        <i id="instagram" class="fa-brands fa-instagram"></i>
+                        <i id="twitter" class="fa-brands fa-twitter"></i>
+                        <i id="google" class="fa-brands fa-google-plus-square"></i>
+                    </div>
+                </div>
+                
+                <div id="hours">
+                    <h2>Opening Hours</h2>
+                    <br>
+                    <p>Monday - Tuesday</p>
+                    <p>11:00am - 7:30pm</p>
+                    <br>
+                    <p>Friday - Saturday</p>
+                    <p>9:00am - 4:30pm</p>
+                </div>
+                <div id="phone">
+                    <h2>Our shop</h2>
+                    <br>
+                    <p>7 St Joseph Manown Road</p>
+                    <p>New York, NY53013</p>
+                    <br>
+                    <p>thebarbershop@shop.com</p>
+                    <p>(+123) 456 789 000</p>
+                </div>
+            </div>
+
+            <div id="bottom-footer">
+                <div class="line-footer"></div>
+                <div id="bottom-text">
+                    <div id="copyright">&copy; 2022 The Barber Shop</div>
+                    <div id="legal">
+                        <p>Terms of Service</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookies Policy</p>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
