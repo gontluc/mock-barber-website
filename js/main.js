@@ -57,15 +57,15 @@ const menu = document.querySelector("#hidden-menu");
 const arrowBack = document.querySelector("#arrow-back");
 
 menu.addEventListener("click", () => {
-    sideMenu.style["display"] = "flex";
+    sideMenu.style["transform"] = "translateX(0px)";
 });
 
 arrowBack.addEventListener("click", () => {
-    sideMenu.style["display"] = "none";
+    sideMenu.style["transform"] = "translateX(500px)";
 });
 
 window.addEventListener("click", (e) => {
     if (e.composedPath()[0] != sideMenu && e.composedPath()[1] != menu) {
-        sideMenu.style["display"] = "none";
+        sideMenu.style["transform"] = "translateX(500px)";
     }
 });
