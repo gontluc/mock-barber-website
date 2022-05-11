@@ -61,11 +61,11 @@ menu.addEventListener("click", () => {
 });
 
 arrowBack.addEventListener("click", () => {
-    sideMenu.style["transform"] = "translateX(500px)";
+    sideMenu.style["transform"] = "translateX(1000px)";
 });
 
 window.addEventListener("click", (e) => {
     if (e.composedPath()[0] != sideMenu && e.composedPath()[1] != menu) {
-        sideMenu.style["transform"] = "translateX(500px)";
+        sideMenu.style["transform"] = "translateX(1000px)";
     }
 });
