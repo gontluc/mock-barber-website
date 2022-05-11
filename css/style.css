@@ -836,12 +836,12 @@ section#footer #bottom-text {
 
 @media(max-width: 850px) {
     #home h1 {
-        margin: 10px 40px;
+        margin: 10px auto;
         font-size: 3em;
     }
 
     #home .bottom-text {
-        margin: 0 40px;
+        margin: 0 auto;
         color: #fff;
         font-family: sans-serif;
         width: 80%;
@@ -959,5 +959,21 @@ section#footer #bottom-text {
     #four-images img {
         width: 120px;
         height: 180px;
+    }
+}
+
+@media(max-width: 370px) {
+    #contact h1 {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #contact form {
+        width: 100vw;
+    }
+
+    #contact .input-box {
+        margin: 10px 0;
+        max-width: 250px;
     }
 }
