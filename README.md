@@ -1,5 +1,13 @@
-# Fake Barber Website
+# Mock Barber Website
 
-Fake business website. Using HTML / CSS / JS
+http
 
-![Desktop view](images/desktop-shot.png)
+<br>
+
+## Technologies
+
+HTML, CSS, JS
+
+## 3rd Party Software (scripts)
+
+- Fontawesome
