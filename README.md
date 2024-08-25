@@ -1,12 +1,14 @@
 # Mock Barber Website
 
-http
+https://mock-barber-website.vercel.app/
 
 <br>
 
 ## Technologies
 
-HTML, CSS, JS
+HTML, CSS, JavaScript
+
+<br>
 
 ## 3rd Party Software (scripts)
 
